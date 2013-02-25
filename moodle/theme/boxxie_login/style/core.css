@@ -1058,3 +1058,36 @@ h2.headingblock {
     padding: 2px; /* adds padding to icon */
     width: 12px;
 }
+
+/*Edit*/
+
+html,
+body{
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #439638), color-stop(3, #9DE875));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to top, #439638 0%, #9DE875 300%);
+}
+
+div.form-description{
+    width:500px;
+}
+
+div#page-wrapper, div#page-header, div.block div.header, div#page-footer{
+    background-color: #387c2c;
+}
+
+/*End edit*/
