@@ -1190,4 +1190,42 @@ div.custom-submit{
     top:90px;
 }
 
+div.gradingtable.custom table.flexible.generaltable.generalbox {
+    margin-left:17em;
+}
+div.gradingtable.custom{
+    position:relative;
+}
+div.no-overflow{
+    overflow-x:scroll;
+}
+div.gradingtable.custom table.flexible.generaltable.generalbox .c0{
+    position:absolute;
+    width:3em;
+    left:0;
+    margin-top: -1px;
+}
+
+div.gradingtable.custom table.flexible.generaltable.generalbox .c1{
+    position: absolute;
+    width:12em;
+    left:4em;
+    margin-top: -1px;
+    visibility: collapse;
+}
+
+div.gradingtable.custom table.flexible.generaltable.generalbox .c2{
+    position: absolute;
+    width:12em;
+    left:4em;
+    margin-top: -1px;
+}
+
+div.gradingtable.custom td{
+    height:360px;
+}
+
+div.gradingtable.custom th{
+    height:39.3px;
+}
 /*End edit*/

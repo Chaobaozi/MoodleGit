@@ -705,7 +705,7 @@ class mod_assign_renderer extends plugin_renderer_base {
      */
     public function render_assign_grading_table(assign_grading_table $table) {
         $o = '';
-        $o .= $this->output->box_start('boxaligncenter gradingtable');
+        $o .= $this->output->box_start('boxaligncenter custom gradingtable');
 
         $this->page->requires->js_init_call('M.mod_assign.init_grading_table', array());
         $this->page->requires->string_for_js('nousersselected', 'assign');
