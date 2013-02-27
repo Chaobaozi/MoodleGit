@@ -1631,4 +1631,21 @@ div.tablets, #sliderdiv, .has-myblocks .jsetsbar {
     max-height: 100px;
 }
 /** Custom CSS **/
+a.ui-btn.ui-btn-right, a.ui-btn.ui-btn-up-b, div.ui-header, div.ui-footer{
+ background:#387c2c; 
+ border-left: #387c2c; 
+  border-top: #387c2c; 
+  border-color:#466337;
+}
+a.ui-btn.ui-btn-hover-b{
+    background:#9de875; 
+}
+
+.ui-body-d .ui-link{
+    color:#387c2c;
+}
+
+.ui-body-d .ui-link:hover{
+    color:#9de875;
+}
 [[setting:customcss]]
