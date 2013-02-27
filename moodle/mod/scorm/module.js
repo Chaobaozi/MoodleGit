@@ -28,7 +28,7 @@ mod_scorm_activate_item = null;
 M.mod_scorm = {};
 
 M.mod_scorm.init = function(Y, hide_nav, hide_toc, toc_title, window_name, launch_sco, scoes_nav) {
-    var scorm_disable_toc = false;
+    var scorm_disable_toc = true;
     var scorm_hide_nav = true;
     var scorm_hide_toc = true;
     if (hide_toc == 0) {
