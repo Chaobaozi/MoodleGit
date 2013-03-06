@@ -16,7 +16,8 @@ $CFG->dboptions = array (
   'dbsocket' => 0,
 );
 
-$CFG->wwwroot   = 'http://localhost/moodle/moodle';
+// $CFG->wwwroot   = 'http://localhost/moodle/moodle';
+$CFG->wwwroot = 'http://' . $_SERVER['HTTP_HOST'] . '/moodle/moodle';
 $CFG->dataroot  = 'C:\\Users\\Chaos\\Xampp\\moodledata';
 $CFG->admin     = 'admin';
 
