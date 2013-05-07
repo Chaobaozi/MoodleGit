@@ -39,10 +39,10 @@ if (!empty($CFG->loginpasswordautocomplete)) {
           <div class="loginform">
             <div class="form-input">
               <label for="username"><?php print_string("username") ?></label><br />
-              <input type="text" name="username" id="username" size="15" value="<?php p($frm->username) ?>" />
+              <input type="text" name="username" id="username" size="15" value="<?php p($frm->username) ?>" tabindex="1"/>
                <?php if (isset($CFG->rememberusername) and $CFG->rememberusername == 2) { ?>
                   <div class="rememberpass">
-                      <input type="checkbox" name="rememberusername" id="rememberusername" value="1" <?php if ($frm->username) {echo 'checked="checked"';} ?> />
+                      <input type="checkbox" tabindex="3" name="rememberusername" id="rememberusername" value="1" <?php if ($frm->username) {echo 'checked="checked"';} ?> />
                       <label for="rememberusername"><?php print_string('rememberusername', 'admin') ?></label>
                   </div>
                 <?php } ?>
@@ -50,12 +50,12 @@ if (!empty($CFG->loginpasswordautocomplete)) {
             <div class="clearer"><!-- --></div>
             <div class="form-input">
               <label for="password"><?php print_string("password") ?></label><br />
-              <input type="password" name="password" id="password" size="15" value="" <?php echo $autocomplete; ?> />
+              <input type="password" name="password" id="password" size="15" tabindex="2" value="" <?php echo $autocomplete; ?> />
               <div class="forgetpass"><a href="forgot_password.php"><?php print_string("forgotten") ?></a></div>
             </div>
           </div>
           <div class="custom-submit">
-              <input type="submit" id="loginbtn" value="<?php print_string("login") ?>" class="custom"//>          
+              <input type="submit" tabindex="4" id="loginbtn" value="<?php print_string("login") ?>" class="custom"//>          
         </form>
         <?php if ($CFG->guestloginbutton and !isguestuser()) {  ?>
              <!--  <div class="desc">
@@ -64,7 +64,7 @@ if (!empty($CFG->loginpasswordautocomplete)) {
               <form action="index.php" method="post" id="guestlogin">
                   <input type="hidden" name="username" value="guest" />
                   <input type="hidden" name="password" value="guest" />
-                  <input type="submit" value="<?php print_string("loginguest") ?>" class="custom"/>
+                  <input type="submit" tabindex="5" value="<?php print_string("loginguest") ?>" class="custom"/>
               </form>
         <?php } ?>
         </div>

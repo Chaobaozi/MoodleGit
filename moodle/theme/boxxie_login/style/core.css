@@ -1064,20 +1064,27 @@ h2.headingblock {
 html
 {
     /* IE10 Consumer Preview */ 
-    background-image: -ms-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+    background-image: -ms-linear-gradient(top, #439638 0%, #9DE875 100%);
+
     /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+    background-image: -moz-linear-gradient(top, #439638 0%, #9DE875 100%);
+
     /* Opera */ 
-    background-image: -o-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+    background-image: -o-linear-gradient(top, #439638 0%, #9DE875 100%);
+
     /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #439638), color-stop(3, #9DE875));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #439638), color-stop(1, #9DE875));
+
     /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(bottom, #439638 0%, #9DE875 300%);
+    background-image: -webkit-linear-gradient(top, #439638 0%, #9DE875 100%);
+
     /* W3C Markup, IE10 Release Preview */ 
-    background-image: linear-gradient(to top, #439638 0%, #9DE875 300%);
+    background-image: linear-gradient(to bottom, #439638 0%, #9DE875 100%);
 }
+
 body{
     background: inherit;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#439638', endColorstr='#9DE875',GradientType=0 ); 
     background-size: 100% 100%;
 }
 div.form-description{
@@ -1118,10 +1125,6 @@ div.loginbox input[type=password], div.loginbox input[type=text]{
     padding: 5px;   
     border: 1px solid #DDDDDD;
     
-    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 2px, #FFFFFF);    
-    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');    
-    
     -moz-box-shadow: -2px 2px 2px  #292929;
     -webkit-box-shadow: -2px 2px 2px  #292929;
     box-shadow: -2px 2px 2px #292929;
@@ -1147,12 +1150,20 @@ div.forgetpass{
     font-family: verdana;
 }
 
+div.forgetpass a{
+    color:#000000;
+}
+div.forgetpass a:hover{
+    color:#41512f;
+}
+
 input.custom{
     float:left;
     width:80px;
     height:35px;
     font-family: verdana;
     font-weight:900;
+    font-size: 18px;
     color:#DDDDDD;
 
     border:2px;
@@ -1164,29 +1175,19 @@ input.custom{
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    margin-right:15px;
+    margin-right:52px;
 
-    background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner, #070F04 0%, #00FF11 100%);
-    background-image: -moz-radial-gradient(left bottom, ellipse farthest-corner, #070F04 0%, #00FF11 100%);
-    background-image: -o-radial-gradient(left bottom, ellipse farthest-corner, #070F04 0%, #00FF11 100%);
-    background-image: -webkit-gradient(radial, left bottom, 0, left bottom, 1012, color-stop(0, #070F04), color-stop(1, #00FF11));
-    background-image: -webkit-radial-gradient(left bottom, ellipse farthest-corner, #070F04 0%, #00FF11 100%);
-    background-image: radial-gradient(ellipse farthest-corner at left bottom, #070F04 0%, #00FF11 100%);
+    background-color:#54b948;
 }
 
 input.custom:hover{
-    background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner, #326B1D 0%, #00FF11 100%);
-    background-image: -moz-radial-gradient(left bottom, ellipse farthest-corner, #326B1D 0%, #00FF11 100%);
-    background-image: -o-radial-gradient(left bottom, ellipse farthest-corner, #326B1D 0%, #00FF11 100%);
-    background-image: -webkit-gradient(radial, left bottom, 0, left bottom, 1012, color-stop(0, #326B1D), color-stop(1, #00FF11));
-    background-image: -webkit-radial-gradient(left bottom, ellipse farthest-corner, #326B1D 0%, #00FF11 100%);
-    background-image: radial-gradient(ellipse farthest-corner at left bottom, #326B1D 0%, #00FF11 100%);
     cursor: pointer;
+    background-color:#4ba640;
 }
 
 div.custom-submit{    
     position:relative;
-    left:47%;
+    left:45%;
     top:90px;
 }
 
