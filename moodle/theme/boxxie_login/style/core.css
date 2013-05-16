@@ -1197,7 +1197,7 @@
     div.gradingtable.custom{
         position:relative;
     }
-    div.no-overflow{
+    div.custom div.no-overflow{
         overflow-x:scroll;
     }
     div.gradingtable.custom table.flexible.generaltable.generalbox .c0{
